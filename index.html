@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <title>Demo Webiste Sekolah</title>
+</head>
+<body>
+    <!-- Bagian Beranda/Home -->
+    <div id="beranda">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#beranda" class="logo">SMK NEGERI 1 KOTA BINJAI</a>
+                <ul class="menu">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#jurusan" onclick="scrollJurusan()">Jurusan</a></li>
+                    <li><a href="#info" onclick="scrollInfo()">Info Sekolah</a></li>
+                </ul>
+                <!-- Bagian Tombol -->
+                <div class="tombol">
+                    &#9776;
+                </div>
+            </div>
+        </nav>
+        <!-- Isi Beranda -->
+        <div class="isi">
+            <div class="content-wrapper">
+                <img class="logo2" src="/asset/image/logo_smk_negeri_1_kota_binjai.png" alt="logosekolah">
+                <div class="text-wrapper">
+                    <div class="vertikal-line">
+                        <h2>Tentang Sekolah</h2>
+                    </div>
+                    <p>
+                        SMK negeri ini memulai kegiatan pendidikan belajar mengajarnya pada tahun 1900. Saat ini SMK Negeri 1 Binjai memakai panduan kurikulum belajar pemerintah yaitu SMK 2013 REV, Usaha Perjalanan Wisata.
+                        SMKN 1 Binjai berada di bawah naungan kepala sekolah dengan nama Safaruddin dibantu oleh operator bernama Rosian Alwi Nasution.
+                    </p>
+                </div>
+            </div>
+        </div>         
+    </div>
+
+    <hr class="hr1" color="#6488EA">
+
+    <!-- Bagian Jurusan -->
+    <div id="jurusan">
+        <div class="container-jurusan">
+            <div class="text-wrapper">
+                <div class="vertikal-line">
+                    <h2>Jurusan Kompetensi Keahlian</h2>
+                </div>
+                <div class="menu-jurusan">
+                    <div class="kolom">Rekayasa Perangkat Lunak 
+                        <span>(RPL)</span>
+                    </div>
+                    <div class="kolom">Bisnis Daring dan Pemasaran
+                        <span>(BDP)</span>
+                    </div>
+                    <div class="kolom">Otomatisasi dan Tata Kelola Perkantoran
+                        <span>(OTKP)</span>
+                    </div>
+                    <div class="kolom">Akuntansi dan Keuangan Lembaga
+                        <span>(AKL)</span>
+                    </div>
+                    <div class="kolom">Perbankan dan Keuangan Mikro
+                        <span>(PKM)</span>
+                    </div>
+                    <div class="kolom">Usaha Perjalanan Wisata
+                        <span>(UPW)</span>
+                    </div>
+                    <div class="kolom">Multimedia
+                        <span>(MM)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="logo3" src="/asset/image/gambar_jurusan.png" alt="logojurusan">
+    </div>
+
+    <!-- Bagian Detail Lainnya -->
+    <div id="info">
+        <div class="content-info">
+            <div class="text-info">
+                    <h2 class="logo4">Info Sekolah</h2>
+                </div>
+                <p>
+                    <img class="icon" src="/asset/image/mail.png" alt="mail">
+                    <span>info@smknegeri1binjai.sch.id</span>
+                </p>
+                <p>
+                    <img class="icon" src="/asset/image/map.png" alt="map">
+                    <span>Jl. Samanhudi No. 20, Kecamatan Binjai Kota, Kota Binjai, Sumatera Utara.</span>
+                </p>
+                <p>
+                    <img class="icon" src="/asset/image/telephone.png" alt="telephone">
+                    <span>+62 (823 2933 8589)</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <h5>All Rights Reserved &copy;2024</h5>
+    </footer>
+
+    <!-- Back To Top -->
+    <button onclick="backToTop()" id="backToTopBtn" title="Kembali ke atas">Back</button>
+    <!-- Js Link -->
+    <script src="/asset/js/NavTombol.js"></script>
+    <script src="/asset/js/BackTop.js"></script>
+</body>
+</html>

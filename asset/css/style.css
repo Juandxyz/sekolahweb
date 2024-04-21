@@ -1,0 +1,324 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+
+.navbar{
+    background: #6488EA;
+    margin: 0;
+    padding: 20px 30px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tombol{
+    display: none;
+    color: white;
+    font-size: 20px;
+}
+
+.tombol:hover{
+    cursor: pointer;
+}
+
+.menu{
+	margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;			
+}
+ 
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+}
+ 
+.menu li a{
+	padding:10px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+ 
+	.menu.aktif{
+		display:inline-block;
+		position: absolute;
+		top: 64px;
+		background: #6488EA;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+	}
+ 
+	.menu.aktif li a{
+		padding: 10px;
+		display: inline-block !important;
+	}
+ 
+	.tombol {
+		display: block;
+	}
+    
+}
+
+/* Bagian aktif saat tombol di klik */
+.menu.aktif{
+	display:inline-block;
+	position: absolute;
+	top: 64px;
+	background: #6488EA;
+	padding: 10px 20px;
+	right: 0;
+	left: 0;
+}
+ 
+.menu.aktif li a{
+	padding: 10px;
+	display: inline-block !important;
+}
+
+/* Bagian isi beranda */
+.isi {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap */
+    max-width: 800px;
+    width: 100%;
+}
+
+.logo2 {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+}
+
+.text-wrapper {
+    margin-left: 25px; /* Adjust margin as needed */
+    flex: 1; /* Allow text to take remaining space */
+}
+
+.vertikal-line {
+    border-left: 5px solid #6488EA; /* Change color as needed */
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (min-width: 460px) and (max-width: 768px) {
+    .isi {
+        flex-direction: column; 
+    }
+    
+    .logo2 {
+        width: 200px; 
+        margin-bottom: 20px; 
+    }
+    
+    .text-wrapper {
+        margin-left: 0; 
+    }
+    
+    .vertikal-line {
+        border-left: none; 
+        padding-left: 0;
+    }
+	
+}
+
+.hr1{
+	display: flex; 
+	margin-top: 150px;
+	border-width: 5px;
+}
+
+/* Bagian Jurusan */
+#jurusan {
+    display: flex;
+    height: 800px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.menu-jurusan {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.kolom {
+    background-color: #83a0ee;
+    color: #fdfdfd;
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center;
+}
+
+.kolom span {
+    display: block;
+    text-align: center;
+	color: white;
+}
+
+.logo3 {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 200px;
+    height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    #jurusan {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+        max-width: 80%;
+    }
+
+    .logo3 {
+        margin: 0;
+        width: 200px; 
+        height: auto;
+    }
+
+    .menu-jurusan {
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Bagian Info Sekolah */
+#info{
+	display: flex;
+    height: 600px;
+    justify-content: center;
+}
+
+.content-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo4 {
+	background: #6488EA;
+	border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+	background-color: #e0e7fb;
+    color: #fdfdfd;
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center;
+}
+
+span {
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .content-info {
+        padding: 0 10px;
+    }
+
+    .logo4 {
+        font-size: 20px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Bagian Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h5 {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 10px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+}
+
+
+/* Back Top */
+#backToTopBtn {
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: #6488EA; 
+    color: white; 
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+#backToTopBtn:hover {
+    background-color: #83a0ee;
+}
