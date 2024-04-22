@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
     <title>Demo Webiste Sekolah</title>
 </head>
 <body>
@@ -14,8 +14,9 @@
                 <a href="#beranda" class="logo">SMK NEGERI 1 KOTA BINJAI</a>
                 <ul class="menu">
                     <li><a href="#beranda">Beranda</a></li>
-                    <li><a href="#jurusan" onclick="scrollJurusan()">Jurusan</a></li>
-                    <li><a href="#info" onclick="scrollInfo()">Info Sekolah</a></li>
+                    <li><a href="#jurusan">Jurusan</a></li>
+                    <li><a href="#guru">Guru</a></li>
+                    <li><a href="#info">Info</a></li>
                 </ul>
                 <!-- Bagian Tombol -->
                 <div class="tombol">
@@ -26,7 +27,7 @@
         <!-- Isi Beranda -->
         <div class="isi">
             <div class="content-wrapper">
-                <img class="logo2" src="logo_smk_negeri_1_kota_binjai.png" alt="logosekolah">
+                <img class="logo2" src="./asset/image/logo_smk_negeri_1_kota_binjai.png" alt="logosekolah">
                 <div class="text-wrapper">
                     <div class="vertikal-line">
                         <h2>Tentang Sekolah</h2>
@@ -74,8 +75,52 @@
                 </div>
             </div>
         </div>
-        <img class="logo3" src="gambar_jurusan.png" alt="logojurusan">
+        <img class="logo3" src="./asset/image/gambar_jurusan.png" alt="logojurusan">
     </div>
+
+    <hr class="hr2" color="#6488EA">
+
+    <!-- bagian guru -->
+    <div id="guru">
+        <div class="text-info">
+            <h2 class="logo5">Guru Sekolah</h2>
+            <!-- Bagian profil -->
+            <div class="container-guru">
+                <div class="profil">
+                    <img src="./asset/image/profil.jpg" alt="profilguru">
+                    <span>M. Faisal Habibie,S.kom</span>
+                    <p>Guru PK - Rekayasa Perangkat Lunak</p>
+                </div>
+                <div class="profil">
+                    <img src="./asset/image/profil.jpg" alt="profilguru">
+                    <span>Lila Anggia, SH</span>
+                    <p>Guru Sejarah</p>
+                </div>
+                <div class="profil">
+                    <img src="./asset/image/profil.jpg" alt="profilguru">
+                    <span>Lelita, S.Pd</span>
+                    <p>Guru Seni Budaya</p>
+                </div>
+                <div class="profil">
+                    <img src="./asset/image/profil.jpg" alt="profilguru">
+                    <span>Indri Yani, S.Pd</span>
+                    <p>Guru Produk Kreatif Kewirausahaan</p>
+                </div>
+                <div class="profil">
+                    <img src="./asset/image/profil.jpg" alt="profilguru">
+                    <span>Fajarrudin, S.Pd</span>
+                    <p>Guru Fisika</p>
+                </div>
+                <div class="profil">
+                    <img src="./asset/image/profil.jpg" alt="profilguru">
+                    <span>Ernita Aquarini Br. Purba, S.S, M.Pd</span>
+                    <p>Guru Bahasa Inggris</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr3" color="#6488EA">
 
     <!-- Bagian Detail Lainnya -->
     <div id="info">
@@ -84,15 +129,15 @@
                     <h2 class="logo4">Info Sekolah</h2>
                 </div>
                 <p>
-                    <img class="icon" src="mail.png" alt="mail">
+                    <img class="icon" src="./asset/image/mail.png" alt="mail">
                     <span>info@smknegeri1binjai.sch.id</span>
                 </p>
                 <p>
-                    <img class="icon" src="map.png" alt="map">
+                    <img class="icon" src="./asset/image/map.png" alt="map">
                     <span>Jl. Samanhudi No. 20, Kecamatan Binjai Kota, Kota Binjai, Sumatera Utara.</span>
                 </p>
                 <p>
-                    <img class="icon" src="telephone.png" alt="telephone">
+                    <img class="icon" src="./asset/image/telephone.png" alt="telephone">
                     <span>+62 (823 2933 8589)</span>
                 </p>
             </div>
@@ -105,9 +150,9 @@
     </footer>
 
     <!-- Back To Top -->
-    <button onclick="backToTop()" id="backToTopBtn" title="Kembali ke atas">Back</button>
+    <button onclick="backToTop()" id="backToTopBtn" title="Kembali ke atas">👆</button>
     <!-- Js Link -->
-    <script src="NavTombol.js"></script>
-    <script src="BackTop.js"></script>
+    <script src="./asset/js/NavTombol.js"></script>
+    <script src="./asset/js/BackTop.js"></script>
 </body>
 </html>

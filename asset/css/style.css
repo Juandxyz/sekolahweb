@@ -5,6 +5,10 @@ body{
 	scroll-behavior: smooth;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .navbar{
     background: #6488EA;
     margin: 0;
@@ -38,7 +42,7 @@ body{
 	margin: 0;
 	display: flex;
 	list-style: none;
-	padding: 0;			
+	padding: 0;	    		
 }
  
 .menu li{
@@ -105,23 +109,23 @@ body{
 
 .content-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allow content to wrap */
+    flex-wrap: wrap; 
     max-width: 800px;
     width: 100%;
 }
 
 .logo2 {
-    width: 300px; /* Adjust width as needed */
+    width: 300px; 
     height: auto;
 }
 
 .text-wrapper {
-    margin-left: 25px; /* Adjust margin as needed */
-    flex: 1; /* Allow text to take remaining space */
+    margin-left: 25px; 
+    flex: 1; 
 }
 
 .vertikal-line {
-    border-left: 5px solid #6488EA; /* Change color as needed */
+    border-left: 5px solid #6488EA; 
     padding-left: 20px;
 }
 
@@ -165,7 +169,7 @@ p {
 /* Bagian Jurusan */
 #jurusan {
     display: flex;
-    height: 800px;
+    /* height: 630px; */
     margin-top: 20px;
     margin-left: 200px;
 }
@@ -209,6 +213,7 @@ p {
         margin: 0;
         width: 200px; 
         height: auto;
+        margin-left: 35px;
     }
 
     .menu-jurusan {
@@ -216,7 +221,11 @@ p {
     }
 }
 
-
+.hr2{
+	display: flex; 
+	margin-top: 110px;
+	border-width: 5px;
+}
 
 /* Bagian Info Sekolah */
 #info{
@@ -260,9 +269,7 @@ p {
     text-align: center;
 }
 
-span {
-    color: #555;
-}
+
 
 @media screen and (max-width: 768px) {
     .content-info {
@@ -281,7 +288,7 @@ span {
 
 /* Bagian Footer */
 footer {
-    background-color: #333;
+    background-color: #6488EA;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -316,9 +323,67 @@ h5 {
     color: white; 
     cursor: pointer;
     padding: 15px; 
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 #backToTopBtn:hover {
     background-color: #83a0ee;
 }
+
+.hr3{
+	display: flex; 
+	margin-top: 90px;
+	border-width: 5px;
+}
+
+/* Bagian profil guru */
+.logo5 {
+    font-size: 24px;
+    color: black; 
+    margin-bottom: 20px;
+}
+
+.container-guru {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profil {
+    text-align: center;
+    flex-basis: calc(33.33% - 20px); /* 33.33% - 20px gap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px #6488EA solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.profil img {
+    width: 50px;
+    height: 50px;
+    border: 2px #83a0ee solid;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.profil span,
+.profil p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .profil {
+        flex-basis: calc(50% - 20px); /* 50% - 20px gap */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .profil {
+        flex-basis: calc(100% - 20px); /* 100% - 20px gap */
+    }
+}
+
